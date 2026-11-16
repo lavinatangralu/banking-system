@@ -1,0 +1,29 @@
+# Root gitignore for the Banking System monorepo
+
+# Dependencies (never commit these - hundreds of MB)
+node_modules/
+**/node_modules/
+
+# Environment files (NEVER commit - contains passwords and secrets!)
+.env
+**/.env
+
+# Build output
+dist/
+**/dist/
+
+# Logs
+*.log
+**/logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Prisma generated client
+# (Prisma generates this automatically via `prisma generate`)
+banking backend/node_modules/
+
+# PostgreSQL data directory (local database files)
+data/
+
